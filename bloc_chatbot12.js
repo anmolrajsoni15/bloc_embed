@@ -111,7 +111,7 @@ function embedBlocChatBot() {
     });
 
     const iframe = document.createElement("iframe");
-    iframe.src = `https://embed.askbloc.ai/bloc/${blocId}`;
+    iframe.src = `http://localhost:3001/bloc/${blocId}`;
     iframe.setAttribute("id", "bloc-iframe");
     iframe.style.border = "none";
     iframe.style.position = "fixed";
@@ -159,12 +159,12 @@ function embedBlocChatBot() {
     messageContainer.appendChild(messageEle);
     popUpMessage.appendChild(messageContainer);
 
-    // setTimeout(() => {
+    setTimeout(() => {
         popUpMessage.style.display = "block";
         messageEle.style.opacity = 1;
         messageEle.style.transform = "scale(1)";
-    // }
-    // , 1000);
+    }
+    , 1000);
 
     popUpMessageClose.style.backgroundColor = theme === "light" ? "#fff" : "#000";
     popUpMessageClose.style.color = theme === "light" ? "#000" : "#fff";
