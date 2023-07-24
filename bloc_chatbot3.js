@@ -128,6 +128,8 @@ function embedBlocChatBot() {
         return CHAT_BUTTON_CLOSE;
       }
 
+      document.body.appendChild(blocBot);
+
       iframe.onload = () => {
         iframe.contentWindow.postMessage(
           { windowInnerWidth: window.innerWidth },
