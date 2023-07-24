@@ -1,5 +1,5 @@
 function embedBlocChatBot() {
-    if(window.blocConfig?.embedSuccess) return;
+    // if(window.blocConfig?.embedSuccess) return;
 
   const blocId = window.blocConfig?.blocId;
   console.log("blocId", blocId);
